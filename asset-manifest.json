@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/the-wheel/static/css/main.2cbe404a.css",
+    "main.js": "/the-wheel/static/js/main.d58db267.js",
+    "static/js/787.0a2ce690.chunk.js": "/the-wheel/static/js/787.0a2ce690.chunk.js",
+    "index.html": "/the-wheel/index.html",
+    "main.2cbe404a.css.map": "/the-wheel/static/css/main.2cbe404a.css.map",
+    "main.d58db267.js.map": "/the-wheel/static/js/main.d58db267.js.map",
+    "787.0a2ce690.chunk.js.map": "/the-wheel/static/js/787.0a2ce690.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cbe404a.css",
+    "static/js/main.d58db267.js"
+  ]
+}
