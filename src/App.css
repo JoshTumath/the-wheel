@@ -1,15 +1,3 @@
-:root {
-  --background: #100295;
-  --background-text: white;
-
-  --wheel-sector: #030d86;
-  --wheel-expert: #d5de03;
-  --wheel-nonexpert: #d60486;
-  --wheel-glow: white;
-
-  --pointer: silver;
-}
-
 body {
   background: var(--background);
   color: var(--background-text);

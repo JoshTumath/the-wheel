@@ -1,22 +1,17 @@
-const getQuestion = (mode) => {
-  switch (mode) {
-    case "choose-category":
-      return "Choose a category";
-    case "choose-nonexpert":
-      return "Choose who would struggle the most with that";
-    default:
-      throw new Error(`No question for mode '${mode}'`);
-  }
-};
-
-function ExpertPicker({ mode, experts, onSelect }) {
-  const question = getQuestion(mode);
-
+function ExpertPicker({ expert, onDone }) {
   return (
     <div>
-      <h2>{question}</h2>
+      <h2>{expert.name}</h2>
 
-      <ul>
+      <button
+        className="button"
+        onClick={() => {
+          onDone();
+        }}
+      >
+        Done
+      </button>
+      {/* <ul>
         {experts.map(({ name, category }) => (
           <li key={name}>
             <button
@@ -37,7 +32,7 @@ function ExpertPicker({ mode, experts, onSelect }) {
             </button>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

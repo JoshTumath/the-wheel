@@ -1,13 +1,17 @@
 import { useState } from "react";
-import Wheel from "./components/Wheel/Wheel";
 import ExpertPicker from "./components/ExpertPicker/ExpertPicker";
-import experts from "./assets/experts.json";
+import Question from "./components/Question/Question";
+import Wheel from "./components/Wheel/Wheel";
+import expertsJSON from "./assets/experts.json";
 import "./App.css";
 
 function App() {
   const [mode, setMode] = useState("choose-category");
   const [currentExpert, setExpert] = useState(null);
   const [currentNonexpert, setNonexpert] = useState(null);
+  const [wheelLandedOn, setWheelLandedOn] = useState();
+
+  const experts = expertsJSON.experts;
 
   return (
     <div className="App">
@@ -19,11 +23,12 @@ function App() {
         <div>
           <Wheel
             mode={mode}
-            experts={experts.experts}
+            experts={experts}
             selectedExpert={currentExpert}
             selectedNonexpert={currentNonexpert}
             onSpinningEnd={(expert) => {
               console.log("Landed on", expert);
+              setWheelLandedOn(expert);
               setMode("question");
             }}
           />
@@ -33,7 +38,7 @@ function App() {
           {mode === "choose-category" && (
             <ExpertPicker
               mode="choose-category"
-              experts={experts.experts}
+              experts={experts}
               onSelect={(name) => {
                 setExpert(name);
                 setMode("choose-nonexpert");
@@ -43,7 +48,16 @@ function App() {
           {mode === "choose-nonexpert" && (
             <ExpertPicker
               mode="choose-nonexpert"
-              experts={experts.experts}
+              experts={experts}
+              onSelect={(name) => {
+                setNonexpert(name);
+                setMode("spin");
+              }}
+            />
+          )}
+          {mode === "question" && (
+            <Question
+              expert={experts[wheelLandedOn]}
               onSelect={(name) => {
                 setNonexpert(name);
                 setMode("spin");

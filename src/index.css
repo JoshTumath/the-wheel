@@ -1,3 +1,16 @@
+:root {
+  --background: #100295;
+  --background-text: white;
+
+  --wheel-sector: #030d86;
+  --wheel-sector-edge: #0095fe;
+  --wheel-expert: #d5de03;
+  --wheel-nonexpert: #d60486;
+  --wheel-glow: white;
+
+  --pointer: silver;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +23,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.button {
+  padding: 2vh 4vh;
+  width: 100%;
+  background: var(--wheel-sector);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  border: 0.5vh solid var(--pointer);
+  border-radius: 6vh;
+  box-shadow: 0 0 1vh var(--wheel-glow), inset 0 0 1vh var(--wheel-glow);
+  font-size: 3vh;
+  font-weight: bold;
+  text-shadow: 0 0.1em 0 black;
+  color: inherit;
+  transition: 200ms;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--wheel-sector-edge);
 }
