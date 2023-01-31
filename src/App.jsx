@@ -9,7 +9,7 @@ function App() {
   const [mode, setMode] = useState("choose-category");
   const [currentExpert, setExpert] = useState(null);
   const [currentNonexpert, setNonexpert] = useState(null);
-  const [wheelLandedOn, setWheelLandedOn] = useState();
+  const [wheelLandedOn, setWheelLandedOn] = useState(null);
 
   const experts = expertsJSON.experts;
 
@@ -27,7 +27,6 @@ function App() {
             selectedExpert={currentExpert}
             selectedNonexpert={currentNonexpert}
             onSpinningEnd={(expert) => {
-              console.log("Landed on", expert);
               setWheelLandedOn(expert);
               setMode("question");
             }}
@@ -49,6 +48,7 @@ function App() {
             <ExpertPicker
               mode="choose-nonexpert"
               experts={experts}
+              selectedExpert={currentExpert}
               onSelect={(name) => {
                 setNonexpert(name);
                 setMode("spin");
@@ -58,9 +58,11 @@ function App() {
           {mode === "question" && (
             <Question
               expert={experts[wheelLandedOn]}
-              onSelect={(name) => {
-                setNonexpert(name);
-                setMode("spin");
+              onDone={() => {
+                setExpert(null);
+                setNonexpert(null);
+                setWheelLandedOn(null);
+                setMode("choose-category");
               }}
             />
           )}

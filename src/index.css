@@ -25,6 +25,12 @@ code {
     monospace;
 }
 
+ul[role="list"],
+ol[role="list"] {
+  padding: 0;
+  list-style: none;
+}
+
 .button {
   padding: 2vh 4vh;
   width: 100%;
@@ -40,7 +46,12 @@ code {
   transition: 200ms;
 }
 
-.button:hover,
-.button:focus {
+.button:enabled:is(:hover, :focus-visible) {
   background-color: var(--wheel-sector-edge);
+}
+
+.button:disabled {
+  background-color: var(--wheel-expert);
+  color: black;
+  text-shadow: none;
 }

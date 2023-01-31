@@ -70,8 +70,8 @@ function Wheel({
         {experts.map(({ name }, index) => {
           const halfOfSectorAngle = 1 / experts.length / 2;
           const rotation = index / experts.length;
-          const isSelectedExpert = selectedExpert === name;
-          const isSelectedNonexpert = selectedNonexpert === name;
+          const isSelectedExpert = selectedExpert === index;
+          const isSelectedNonexpert = selectedNonexpert === index;
 
           return (
             <div

@@ -3,18 +3,32 @@ body {
   color: var(--background-text);
 }
 
-.with-sidebar {
+header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.stack {
   display: flex;
-  flex-wrap: wrap;
-  gap: 5vh;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.with-sidebar > :first-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: 50%;
+.stack > * {
+  margin-block: 0;
 }
 
-.with-sidebar > :last-child {
-  flex-grow: 1;
+.stack > * + * {
+  margin-block-start: 2vh;
+}
+
+.with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 40vh;
+  gap: 4vh;
+  align-items: center;
+  height: 100vh;
+  aspect-ratio: 16 / 9;
 }

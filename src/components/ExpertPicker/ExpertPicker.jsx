@@ -9,20 +9,23 @@ const getQuestion = (mode) => {
   }
 };
 
-function ExpertPicker({ mode, experts, onSelect }) {
+function ExpertPicker({ mode, experts, selectedExpert = null, onSelect }) {
   const question = getQuestion(mode);
+  console.log(selectedExpert);
 
   return (
     <div>
       <h2>{question}</h2>
 
-      <ul>
-        {experts.map(({ name, category }) => (
+      <ul role="list" className="stack">
+        {experts.map(({ name, category }, index) => (
           <li key={name}>
             <button
+              type="button"
+              disabled={index === selectedExpert}
               className="button"
               onClick={() => {
-                onSelect(name);
+                onSelect(index);
               }}
             >
               {mode === "choose-category" ? (
