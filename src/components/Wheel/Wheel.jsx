@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import wheelSpinningMusicMP3 from "./spin.mp3";
+import wheelSpinningFinishedSfxMP3 from "./ding.mp3";
 import "./Wheel.css";
 
-const MIN_TURNS = 4;
-const MAX_TURNS = 6;
-const SPIN_DURATION_MS = 10000;
+const MIN_TURNS = 3;
+const MAX_TURNS = 4;
+const SPIN_DURATION_MS = 17000;
 
 const getRandomAngle = () =>
   Math.random() * (MAX_TURNS - MIN_TURNS) + MIN_TURNS;
@@ -51,7 +53,10 @@ function Wheel({
       })
     );
 
+    const music = new Audio(wheelSpinningMusicMP3);
+
     newSpinAnimation.play();
+    music.play();
     setSpinAnimation(newSpinAnimation);
     setSpinAnimationRunning(true);
 
@@ -65,6 +70,8 @@ function Wheel({
         angleAfterSpin,
         experts.length
       );
+
+      new Audio(wheelSpinningFinishedSfxMP3).play();
 
       setCurrentExpertWheelStoppedOn(expertWheelStoppedOn);
       onSpinningEnd();
