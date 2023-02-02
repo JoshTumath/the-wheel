@@ -29,6 +29,12 @@ header {
   grid-template-columns: 1fr 40vh;
   gap: 4vh;
   align-items: center;
+  margin: auto;
+  width: 150vh;
   height: 100vh;
-  aspect-ratio: 16 / 9;
+}
+
+.with-sidebar > * {
+  padding: 2vh;
+  overflow: hidden;
 }
