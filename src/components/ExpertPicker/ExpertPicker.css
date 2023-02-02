@@ -1,0 +1,5 @@
+.button.expert {
+  background-color: var(--wheel-expert);
+  color: black;
+  text-shadow: none;
+}

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Wheel.css";
 
 const MIN_TURNS = 4;
@@ -23,6 +23,14 @@ function Wheel({
   const wheelRef = useRef(null);
   const [spinAnimation, setSpinAnimation] = useState();
   const [spinAnimationRunning, setSpinAnimationRunning] = useState(false);
+  const [currentExpertWheelStoppedOn, setCurrentExpertWheelStoppedOn] =
+    useState(null);
+
+  useEffect(() => {
+    if (mode === "choose-category") {
+      setCurrentExpertWheelStoppedOn(null);
+    }
+  }, [mode]);
 
   const spinWheel = async () => {
     const turn = getRandomAngle();
@@ -58,7 +66,8 @@ function Wheel({
         experts.length
       );
 
-      onSpinningEnd(expertWheelStoppedOn);
+      setCurrentExpertWheelStoppedOn(expertWheelStoppedOn);
+      onSpinningEnd();
     } catch (error) {
       console.error(error);
     }
@@ -71,12 +80,19 @@ function Wheel({
           const halfOfSectorAngle = 1 / experts.length / 2;
           const rotation = index / experts.length;
           const isSelectedExpert = selectedExpert === index;
-          const isSelectedNonexpert = selectedNonexpert === index;
+          const isSelectedNonexpert =
+            selectedNonexpert === index &&
+            (currentExpertWheelStoppedOn === null ||
+              currentExpertWheelStoppedOn === index);
+          const isCurrentExpertWheelStoppedOn =
+            currentExpertWheelStoppedOn === index;
 
           return (
             <div
               key={name}
-              className={`wheel-segments ${isSelectedExpert ? "expert" : ""} ${
+              className={`wheel-segments ${
+                isCurrentExpertWheelStoppedOn ? "selected" : ""
+              } ${isSelectedExpert ? "expert" : ""} ${
                 isSelectedNonexpert ? "nonexpert" : ""
               }`}
               style={{ rotate: `${halfOfSectorAngle + rotation}turn` }}

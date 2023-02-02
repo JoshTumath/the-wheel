@@ -48,8 +48,13 @@
   transition: 500ms;
 }
 
+.wheel-segments.selected {
+  background-color: var(--wheel-sector-edge);
+}
+
 .wheel-segments.expert {
   background-color: var(--wheel-expert);
+  color: black;
 }
 
 .wheel-segments.nonexpert {

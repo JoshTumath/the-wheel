@@ -2,23 +2,138 @@
   "experts": [
     {
       "name": "Aaron",
-      "category": "Harry Potter"
+      "category": "Harry Potter",
+      "questions": [
+        {
+          "label": "Hello",
+          "answers": [
+            {
+              "label": "Wrong 1",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 2",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 3",
+              "isCorrect": false
+            },
+            {
+              "label": "Right",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Asha",
-      "category": "Disney"
+      "category": "Disney",
+      "questions": [
+        {
+          "label": "Hello",
+          "answers": [
+            {
+              "label": "Wrong 1",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 2",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 3",
+              "isCorrect": false
+            },
+            {
+              "label": "Right",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Hannah",
-      "category": "Maths"
+      "category": "Maths",
+      "questions": [
+        {
+          "label": "Hello",
+          "answers": [
+            {
+              "label": "Wrong 1",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 2",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 3",
+              "isCorrect": false
+            },
+            {
+              "label": "Right",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Janica",
-      "category": "Food"
+      "category": "Food",
+      "questions": [
+        {
+          "label": "Hello",
+          "answers": [
+            {
+              "label": "Wrong 1",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 2",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 3",
+              "isCorrect": false
+            },
+            {
+              "label": "Right",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Matthew",
-      "category": "Classical music"
+      "category": "Classical music",
+      "questions": [
+        {
+          "label": "Hello",
+          "answers": [
+            {
+              "label": "Wrong 1",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 2",
+              "isCorrect": false
+            },
+            {
+              "label": "Wrong 3",
+              "isCorrect": false
+            },
+            {
+              "label": "Right",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }

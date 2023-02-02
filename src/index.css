@@ -31,6 +31,13 @@ ol[role="list"] {
   list-style: none;
 }
 
+.heading {
+  font-size: 4vh;
+  line-height: 1.125em;
+  text-align: center;
+  text-shadow: 0 0.1em 0 black;
+}
+
 .button {
   padding: 2vh 4vh;
   width: 100%;
@@ -51,7 +58,4 @@ ol[role="list"] {
 }
 
 .button:disabled {
-  background-color: var(--wheel-expert);
-  color: black;
-  text-shadow: none;
 }

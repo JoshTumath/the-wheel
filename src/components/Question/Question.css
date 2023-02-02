@@ -1,0 +1,9 @@
+.button.selected {
+  background-color: var(--wheel-sector-edge);
+}
+
+.button.correct {
+  background-color: var(--wheel-expert);
+  color: black;
+  text-shadow: none;
+}
