@@ -5,7 +5,7 @@ import "./Wheel.css";
 
 const MIN_TURNS = 3;
 const MAX_TURNS = 4;
-const SPIN_DURATION_MS = 17000;
+const SPIN_DURATION_MS = 18000;
 
 const getRandomAngle = () =>
   Math.random() * (MAX_TURNS - MIN_TURNS) + MIN_TURNS;
@@ -48,7 +48,7 @@ function Wheel({
     const newSpinAnimation = new Animation(
       new KeyframeEffect(wheelRef.current, [{ rotate: `${turn}turn` }], {
         duration: SPIN_DURATION_MS,
-        easing: "ease-out",
+        easing: "ease-in-out",
         fill: "forwards",
       })
     );
