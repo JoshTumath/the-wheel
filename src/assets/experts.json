@@ -5,26 +5,68 @@
       "category": "Harry Potter",
       "questions": [
         {
-          "label": "Hello",
+          "label": "Which Hogwarts house was Luna Lovegood in?",
           "answers": [
             {
-              "label": "Wrong 1",
+              "label": "Gryffindor",
               "isCorrect": false
             },
             {
-              "label": "Wrong 2",
+              "label": "Hufflepuff",
               "isCorrect": false
             },
             {
-              "label": "Wrong 3",
-              "isCorrect": false
-            },
-            {
-              "label": "Right",
+              "label": "Ravenclaw",
               "isCorrect": true
+            },
+            {
+              "label": "Slytherin",
+              "isCorrect": false
             }
           ]
-        }
+        },
+        {
+          "label": "Which of these teachers never taught Defense Against the Dark Arts?",
+          "answers": [
+            {
+              "label": "Prof. Quirinus Quirrell",
+              "isCorrect": false
+            },
+            {
+              "label": "Prof. Severus Snape",
+              "isCorrect": false
+            },
+            {
+              "label": "Prof. Sybill Trelawney",
+              "isCorrect": true
+            },
+            {
+              "label": "Prof. Remus Lupin",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "Where is the entrance to the Chamber of Secrets?",
+          "answers": [
+            {
+              "label": "Slytherin Common Room",
+              "isCorrect": false
+            },
+            {
+              "label": "The girl's bathroom",
+              "isCorrect": true
+            },
+            {
+              "label": "The Forbidden Forest",
+              "isCorrect": false
+            },
+            {
+              "label": "Under the Womping Willow tree",
+              "isCorrect": false
+            }
+          ]
+        },
       ]
     },
     {
