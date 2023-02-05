@@ -86,23 +86,65 @@
       "category": "Food",
       "questions": [
         {
-          "label": "Hello",
+          "label": "What does the word 'Nasi' mean in Indonesian and Malay cuisine?",
           "answers": [
             {
-              "label": "Wrong 1",
-              "isCorrect": false
-            },
-            {
-              "label": "Wrong 2",
-              "isCorrect": false
-            },
-            {
-              "label": "Wrong 3",
-              "isCorrect": false
-            },
-            {
-              "label": "Right",
+              "label": "Rice",
               "isCorrect": true
+            },
+            {
+              "label": "Egg",
+              "isCorrect": false
+            },
+            {
+              "label": "Curry",
+              "isCorrect": false
+            },
+            {
+              "label": "Potatoes",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "Which flower does the spice 'saffron' come from?",
+          "answers": [
+            {
+              "label": "Orchid",
+              "isCorrect": false
+            },
+            {
+              "label": "Crocus",
+              "isCorrect": true
+            },
+            {
+              "label": "Nasturtium",
+              "isCorrect": false
+            },
+            {
+              "label": "Poppy",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "What is the Japanese food 'nori' made from?",
+          "answers": [
+            {
+              "label": "Rice",
+              "isCorrect": false
+            },
+            {
+              "label": "Seaweed",
+              "isCorrect": true
+            },
+            {
+              "label": "Mushroom",
+              "isCorrect": false
+            },
+            {
+              "label": "Soy",
+              "isCorrect": false
             }
           ]
         }
@@ -113,22 +155,64 @@
       "category": "Classical music",
       "questions": [
         {
-          "label": "Hello",
+          "label": "Which of these instruments isn’t in a standard string quartet?",
           "answers": [
             {
-              "label": "Wrong 1",
+              "label": "Violin",
               "isCorrect": false
             },
             {
-              "label": "Wrong 2",
+              "label": "Cello",
               "isCorrect": false
             },
             {
-              "label": "Wrong 3",
+              "label": "Double bass",
+              "isCorrect": true
+            },
+            {
+              "label": "Viola",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "What is the lowest male voice type?",
+          "answers": [
+            {
+              "label": "Baritone",
               "isCorrect": false
             },
             {
-              "label": "Right",
+              "label": "Bass",
+              "isCorrect": true
+            },
+            {
+              "label": "Tenor",
+              "isCorrect": false
+            },
+            {
+              "label": "Alto",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "Which classical music work is the 'Hallelujah Chorus' from?",
+          "answers": [
+            {
+              "label": "Mendelssohn's 'Hark The Herald Angels Sing'",
+              "isCorrect": false
+            },
+            {
+              "label": "Whitacre's 'Little Tree'",
+              "isCorrect": false
+            },
+            {
+              "label": "Bach's 'Christmas Oratorio'",
+              "isCorrect": false
+            },
+            {
+              "label": "Handel's 'Messiah'",
               "isCorrect": true
             }
           ]
