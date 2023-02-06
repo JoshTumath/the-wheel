@@ -66,7 +66,7 @@
               "isCorrect": false
             }
           ]
-        },
+        }
       ]
     },
     {
@@ -115,7 +115,6 @@
             }
           ]
         },
-        ,
         {
           "label": "What is the most recent Disney theme park to be built?",
           "answers": [
