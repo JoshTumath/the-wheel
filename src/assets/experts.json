@@ -144,22 +144,64 @@
       "category": "Maths",
       "questions": [
         {
-          "label": "Hello",
+          "label": "What's the next prime number after 53?",
           "answers": [
             {
-              "label": "Wrong 1",
+              "label": "57",
               "isCorrect": false
             },
             {
-              "label": "Wrong 2",
+              "label": "59",
+              "isCorrect": true
+            },
+            {
+              "label": "61",
               "isCorrect": false
             },
             {
-              "label": "Wrong 3",
+              "label": "67",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "What is the value of π (Pi) when rounded to 5 decimal places?",
+          "answers": [
+            {
+              "label": "3.14159",
+              "isCorrect": true
+            },
+            {
+              "label": "2.73267",
               "isCorrect": false
             },
             {
-              "label": "Right",
+              "label": "3.53175",
+              "isCorrect": false
+            },
+            {
+              "label": "3.21943",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "label": "What is the next number in this sequence: 7, 15, 31, 63, ...?",
+          "answers": [
+            {
+              "label": "71",
+              "isCorrect": false
+            },
+            {
+              "label": "95",
+              "isCorrect": false
+            },
+            {
+              "label": "100",
+              "isCorrect": false
+            },
+            {
+              "label": "127",
               "isCorrect": true
             }
           ]
