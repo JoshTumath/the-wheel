@@ -74,23 +74,66 @@
       "category": "Disney",
       "questions": [
         {
-          "label": "Hello",
+          "label": "Which of these Disney films has not had a live action remake?",
           "answers": [
             {
-              "label": "Wrong 1",
+              "label": "The Lion King",
               "isCorrect": false
             },
             {
-              "label": "Wrong 2",
+              "label": "The Jungle Book",
               "isCorrect": false
             },
             {
-              "label": "Wrong 3",
+              "label": "Dumbo",
               "isCorrect": false
             },
             {
-              "label": "Right",
+              "label": "Hercules",
               "isCorrect": true
+            }
+          ]
+        },
+        {
+          "label": "In Aladdin, how long was The Genie stuck in the lamp for before Aladdin found it?",
+          "answers": [
+            {
+              "label": "500 years",
+              "isCorrect": false
+            },
+            {
+              "label": "1000 years",
+              "isCorrect": false
+            },
+            {
+              "label": "5000 years",
+              "isCorrect": false
+            },
+            {
+              "label": "10000 years",
+              "isCorrect": true
+            }
+          ]
+        },
+        ,
+        {
+          "label": "What is the most recent Disney theme park to be built?",
+          "answers": [
+            {
+              "label": "Shanghai Disneyland",
+              "isCorrect": true
+            },
+            {
+              "label": "Tokyo DisneySea",
+              "isCorrect": false
+            },
+            {
+              "label": "Hong Kong Disneyland",
+              "isCorrect": false
+            },
+            {
+              "label": "Disney's Animal Kingdom",
+              "isCorrect": false
             }
           ]
         }
